@@ -1,5 +1,7 @@
 ## concepts: https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-resource-model
 
+## tutorial: https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-quick-create-portal
+
 ## Window Functions: 
 
 Now, let's go through each type of window function and see how they can be used in real industry scenarios:
