@@ -20,6 +20,7 @@ WITH IDENTITY='SHARED ACCESS SIGNATURE'
 CREATE EXTERNAL DATA SOURCE log_data
 WITH (    LOCATION   = 'https://datalake2000233.dfs.core.windows.net/csv',
           CREDENTIAL = SasToken
+	--TYPE = HAdoop etc means you wantd to query it using Mentioned Tech
 )
 
 /* This creates an External File Format object that defines the external data that can be 
