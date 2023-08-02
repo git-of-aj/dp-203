@@ -33,6 +33,8 @@ e. Supplement to Dedicated SQL Pool: In some cases, Serverless can complement De
 
 ----------------------------------------------------------
 
+> 💡💡 ALL commands like openrowset, The CREATE EXTERNAL TABLE AS SELECT (CETAS) statement etc are also avaiable in SQL Server (T-SQL) 💡💡
+
 ## OPENROWSET - reads the content of the file(s) from a data source
 > In easy terms, the OPENROWSET function in Azure Synapse Analytics is like a bridge that allows you to directly access data stored in external sources from your database queries. It's a way to read data from files like CSV or Excel, or even from other databases, without having to first copy that data into your own database.
 
@@ -57,4 +59,28 @@ Imagine you have a data lake in Azure Blob Storage where you store all your hist
 Example Real-Life Use Case:
 Suppose you have received a CSV file containing some important data, and you want to quickly analyze its contents. Instead of first copying the data into your database, you can use the `OPENROWSET` function to directly read the data from the CSV file in your query. This way, you can quickly perform a one-time analysis without permanently storing the data in your database.
 
-In summary, external database objects are more suited for persistent and frequent access to data in external sources, while the `OPENROWSET` function is ideal for temporary and ad-hoc data retrieval without the need for long-term connections.
+In summary, external database objects are more suited for persistent and frequent access to data in external sources, while the `OPENROWSET` function is ideal for temporary and ad-hoc data retrieval without the need for long-term connections
+
+## The CREATE EXTERNAL TABLE AS SELECT (CETAS) statement
+- You can use CREATE EXTERNAL TABLE AS SELECT (CETAS) in dedicated SQL pool or serverless SQL pool to complete the following tasks:
+
+1.Create an external table
+2.Export, in parallel, the results of a Transact-SQL SELECT statement to:
+- Hadoop
+- Azure Storage Blob
+- Azure Data Lake Storage Gen2
+
+**EXPLAIN LIKE BELOW**:
+In easy language, the `CREATE EXTERNAL TABLE AS SELECT` (CETAS) statement in Azure Synapse Analytics is like a magic spell that lets you create a new table in your database by copying data from an external source or an existing table.
+
+Imagine you have a bunch of data stored in an Excel file, a CSV file, or another database, and you want to work with that data in your database. With CETAS, you can create a new table in your database and fill it with the data you select from an external source or an existing table.
+
+Here's how it works:
+
+1. You first specify the structure of the new table you want to create, including its columns and data types.
+
+2. Then, you write a SELECT statement that specifies which data you want to copy into the new table. This SELECT statement can either retrieve data from an external source (like an Excel file) or an existing table in your database.
+
+3. When you run the CETAS statement, it works its magic, creating the new table and filling it with the selected data. Now you have a brand new table in your database that contains the data you wanted.
+
+This CETAS statement is a powerful tool because it allows you to bring in data from different places and store it in your database for further analysis and manipulation. It's like summoning a new table with just the data you need, without the hassle of manually creating the table's structure and inserting the data one by one.
