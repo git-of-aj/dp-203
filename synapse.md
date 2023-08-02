@@ -84,3 +84,7 @@ Here's how it works:
 3. When you run the CETAS statement, it works its magic, creating the new table and filling it with the selected data. Now you have a brand new table in your database that contains the data you wanted.
 
 This CETAS statement is a powerful tool because it allows you to bring in data from different places and store it in your database for further analysis and manipulation. It's like summoning a new table with just the data you need, without the hassle of manually creating the table's structure and inserting the data one by one.
+
+## Stored Procedure
+same as normal stored procedure -- save some sql statements for later use
+https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-stored-procedures
