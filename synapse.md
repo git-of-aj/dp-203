@@ -32,7 +32,10 @@ d. External Data Source Querying: Serverless allows you to query external data s
 e. Supplement to Dedicated SQL Pool: In some cases, Serverless can complement Dedicated SQL Pool by providing on-demand querying capabilities for occasional workloads or additional data sources.
 
 ----------------------------------------------------------
+RN we are watching how to copy data using cmds.... 
+later we can use pipelines to copy data
 
+----------------------------------------------------------------
 > 💡💡 ALL commands like openrowset, The CREATE EXTERNAL TABLE AS SELECT (CETAS) statement etc are also avaiable in SQL Server (T-SQL) 💡💡
 
 ## OPENROWSET - reads the content of the file(s) from a data source
@@ -88,3 +91,29 @@ This CETAS statement is a powerful tool because it allows you to bring in data f
 ## Stored Procedure
 same as normal stored procedure -- save some sql statements for later use
 https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-stored-procedures
+===============================================================================================================
+
+## Use Pipelins to copy data - In notebook' ==> module-5
+
+## Facts table vs Dimension table -- Diagram ==> mod -4
+In summary, fact tables store quantitative data about specific events or transactions, while dimension tables provide the descriptive context and attributes to understand and analyze the data in the fact table more effectively. Together, they form the foundation for building powerful data warehouses that support business intelligence and analytics.
+
+Sure! In simple terms:
+
+1. Fact Table:
+   - Fact tables contain quantitative data and represent the "facts" or measurements of a specific event or activity.
+   - They are used to store numerical values, such as sales revenue, quantity sold, or any other measurable metrics.
+   - Fact tables are the central table in a data warehouse and typically contain foreign keys that link to dimension tables.
+
+   Real-Life Example:
+   Let's consider an online retail store. The fact table for this business might contain information about each transaction, such as the order ID, customer ID, product ID, quantity sold, and the total sales amount. Each row in the fact table represents a specific transaction made by a customer.
+
+2. Dimension Table:
+   - Dimension tables contain descriptive attributes and provide context or characteristics for the data in the fact table.
+   - They store textual or categorical data that help in organizing and analyzing the quantitative data in the fact table.
+   - Dimension tables usually have primary keys, and these keys are referenced as foreign keys in the fact table.
+
+   Real-Life Example:
+   Continuing with the online retail store example, dimension tables could include the customer dimension, product dimension, and time dimension. The customer dimension table may store information about customers, such as their name, address, and demographic data. The product dimension table could contain details about each product, like its name, category, and price. The time dimension table would have attributes related to dates, like day, month, year, etc., which provide a temporal context to the sales data.
+
+
