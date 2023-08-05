@@ -94,6 +94,7 @@ https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-stored-pro
 ===============================================================================================================
 
 ## Use Pipelins to copy data - In notebook' ==> module-5
+Pipleline tutorial -- https://learn.microsoft.com/en-us/azure/synapse-analytics/get-started-pipelines
 
 ## Facts table vs Dimension table -- Diagram ==> mod -4
 In summary, fact tables store quantitative data about specific events or transactions, while dimension tables provide the descriptive context and attributes to understand and analyze the data in the fact table more effectively. Together, they form the foundation for building powerful data warehouses that support business intelligence and analytics.
