@@ -25,7 +25,7 @@
 ------------------------------------------------------
 
 # All services Together
-1. Basic Pipeline
+1. Basic Pipeline - https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/ingest-etl-stream-with-adb
    
 ![](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/media/ingest-etl-and-stream-processing-with-azure-databricks.svg)
 
