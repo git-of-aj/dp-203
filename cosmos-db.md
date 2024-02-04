@@ -26,9 +26,10 @@
 
 # All services Together
 1. Basic Pipeline
-![]([https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/ingest-etl-stream-with-adb](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/media/ingest-etl-and-stream-processing-with-azure-databricks.svg))
+   
+![](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/media/ingest-etl-and-stream-processing-with-azure-databricks.svg)
 
-2. Little advanced
+3. Little advanced
 ![](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/media/azure-databricks-modern-analytics-architecture.svg)
 
 Certainly! Let's design a real-world architecture using Azure Synapse Analytics, HDInsight, and Azure Databricks for a comprehensive retail sales analytics solution.
