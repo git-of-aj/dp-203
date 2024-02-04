@@ -9,6 +9,15 @@
 # Microsoft Fabric
 > It brings together the best of Microsoft Power BI, Azure Synapse, and Azure Data Factory into one unified software as a service (SaaS) platform. 
 - [MS DOCS](https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview)
+- [Labs](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/01-lakehouse.html)
 - SaaS data lake = onelake = almost like onedrive
 - akehouse provides highly scalable file storage in a OneLake store (built on Azure Data Lake Store Gen2) with a metastore for relational objects such as tables and views based on the open source Delta Lake table format.(versioned Parquet file) 
 - [video announcement](https://build.microsoft.com/en-US/sessions/852ccf38-b07d-4ddc-a9fe-2e57bdaeb613?source=sessions)
+
+# Slide - 4 
+## Data analytics 
+[what is data analytics](https://aws.amazon.com/what-is/data-analytics)
+
+# Decision Trees
+- [Data Store](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/data-store-decision-tree)
+- [SSIS vs ADF](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/pipeline-orchestration-data-movement)
