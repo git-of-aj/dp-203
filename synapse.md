@@ -1,5 +1,8 @@
 ## Definition
-
+- [ms docs](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is)
+- Ingest data from 90+ data sources
+- Code-Free ETL with Data flow activities
+- Orchestrate notebooks, Spark jobs, stored procedures, SQL scripts, and more
 ## Dedicated vs Serverless
 1. SV - only external tables
 2. ded - Can create and store Tables just like SQl Db + External DB **(Azure Portal -> Left side => SQL Pools => {+})**
