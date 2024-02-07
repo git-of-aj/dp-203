@@ -1,11 +1,16 @@
 > data analytics is essentially about turning raw numbers into useful information that can help businesses make smarter choices or understand their operations better.
+
 ## Definition
 - [ms docs](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is)
 - Ingest data from 90+ data sources
 - Code-Free ETL with Data flow activities
 - Orchestrate notebooks, Spark jobs, stored procedures, SQL scripts, and more
 
+# Terminology
+https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-terminology
+
 ## Dedicated vs Serverless
+> [functional differences](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-faq#what-are-the-functional-differences-between-dedicated-sql-pools-and-serverless-pools-)
 1. SV - only external tables
 2. ded - Can create and store Tables just like SQl Db + External DB **(Azure Portal -> Left side => SQL Pools => {+})**
 3. Azure Synapse Portal => Workspace => SQL DB => you see bth serverless + dedicated........ Left side under mange => see agian
