@@ -1,5 +1,10 @@
 > data analytics is essentially about turning raw numbers into useful information that can help businesses make smarter choices or understand their operations better.
 
+-----
+EDW - https://www.snowflake.com/guides/what-enterprise-data-warehouse/
+
+- smaller data warehouse may be specific to a business department or line of business (like a data mart). In contrast, an `Enterprise Data Warehouse` is intended to be a single repository for all of an organization’s data.
+
 ## Definition
 - [ms docs](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is)
 - Ingest data from 90+ data sources
