@@ -14,3 +14,7 @@ Powering organization-specific AI experiences requires a constant supply of clea
 Managing data security (table, column, and row levels) across different data engines can be a persistent nightmare for customers. Fabric will provide a universal security model that is managed in OneLake, and all engines enforce it uniformly as they process queries and jobs. This model is coming soon.  
 > Existing Microsoft products such as Azure Synapse Analytics, Azure Data Factory, and Azure Data Explorer will continue to provide a robust, enterprise-grade platform as a service (PaaS) solution for data analytics. Fabric represents an evolution of those offerings in the form of a simplified SaaS solution that can connect to existing PaaS offerings
 - [MS FABRIC DOCS](https://learn.microsoft.com/en-us/fabric/)
+
+# [fabric free trail](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
+- You don't need an Azure subscription to start a Fabric trial. If you have an existing Azure subscription, you can purchase a (paid) Fabric capacity.
+- but you need POWER BI LICENSE 
