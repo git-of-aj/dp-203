@@ -18,3 +18,4 @@ Managing data security (table, column, and row levels) across different data eng
 # [fabric free trail](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
 - You don't need an Azure subscription to start a Fabric trial. If you have an existing Azure subscription, you can purchase a (paid) Fabric capacity.
 - but you need POWER BI LICENSE 
+# [fabric tutorial list ms dics ](https://learn.microsoft.com/en-us/fabric/get-started/end-to-end-tutorials)
