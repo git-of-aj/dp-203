@@ -149,4 +149,19 @@ Sure! In simple terms:
    Real-Life Example:
    Continuing with the online retail store example, dimension tables could include the customer dimension, product dimension, and time dimension. The customer dimension table may store information about customers, such as their name, address, and demographic data. The product dimension table could contain details about each product, like its name, category, and price. The time dimension table would have attributes related to dates, like day, month, year, etc., which provide a temporal context to the sales data.
 
+---
+
+External Tables vs. CETAS:
+
+External tables access data without moving it, while CETAS creates new internal tables by copying data.
+External tables are used for querying data without importing it, while CETAS is used for materializing query results into new tables.
+External tables are more suitable for real-time or near-real-time analytics on external data, while CETAS is more about optimizing performance and organizing data within Synapse.
+External Tables vs. OPENROWSET:
+
+External tables provide a permanent definition of data sources, while OPENROWSET is used for ad-hoc querying.
+External tables are better for structured and repeated access to external data, while OPENROWSET is more suitable for occasional or exploratory queries.
+External tables offer better performance for repeated queries on external data, while OPENROWSET may incur overhead for every query as it accesses the data source directly.
+
+
+
 
