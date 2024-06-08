@@ -105,6 +105,21 @@ Here's how it works:
 
 This CETAS statement is a powerful tool because it allows you to bring in data from different places and store it in your database for further analysis and manipulation. It's like summoning a new table with just the data you need, without the hassle of manually creating the table's structure and inserting the data one by one.
 
+#### ==========================================================================================
+*OPENROWSET*:
+   - *Use Case*: You can use OPENROWSET to read data from external data sources like Azure Blob Storage, Azure Data Lake Storage, or Azure SQL Database directly into Azure Synapse Analytics.
+   - *Difference*: OPENROWSET allows you to query data from external sources without persisting it within your Synapse environment. It's useful for ad-hoc queries or when you only need to access the data temporarily.
+
+2. *CTAS (Create Table As Select)*:
+   - *Use Case*: CTAS is used to create a new table based on the results of a SELECT query. It's commonly used when you want to transform or aggregate data and store the results in a new table.
+   - *Difference*: Unlike OPENROWSET, CTAS creates a new table within your Synapse environment and persists the data. This is useful when you need to perform complex transformations or aggregations on data and want to store the results for future use or analysis.
+- Let's say you have sales data stored in Azure Blob Storage, and you want to analyze monthly sales trends in Azure Synapse Analytics:
+
+- You could use OPENROWSET to directly query the sales data from Azure Blob Storage and generate monthly sales reports on the fly without storing the raw data within Synapse.
+- Alternatively, if you need to perform complex calculations or join the sales data with other internal data sources, you might use CTAS to create a new table in Synapse that aggregates the sales data by month, allowing for faster and more efficient analysis in the long term.
+
+
+
 ## Stored Procedure
 same as normal stored procedure -- save some sql statements for later use
 https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-stored-procedures
