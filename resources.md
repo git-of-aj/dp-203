@@ -16,9 +16,31 @@
 3. activities
 4. functions and parameters
 5. self hosted IR vm =>sql srv express =>expresssetup of ir
-6. 
 7. ADF ==> pvt endpoint <=> SQL server [adf portal => left side manage => pvt endpoint]
 8. Git integration
+-----------------------
+```json
+ "data": [
+    {
+      "id": 7,
+      "email": "michael.lawson@reqres.in",
+      "first_name": "Michael",
+      "last_name": "Lawson",
+      "avatar": "https://reqres.in/img/faces/7-image.jpg"
+    },
+    {
+      "id": 8,
+      "email": "lindsay.ferguson@reqres.in",
+      "first_name": "Lindsay",
+      "last_name": "Ferguson",
+      "avatar": "https://reqres.in/img/faces/8-image.jpg"
+    },
+   
+```
+
+SO under ADF => `Mapping` ==> `Collection Refernce` => Copy paste what you see below `$['data']`
+- filename `@concat(utNOw('mm'),'-',utcNow('hh'),'.csv')` ==> BTW last time I didn't use .csv 
+- COpy to Sql insert => auto create new table 
 
 ## databricks 
 [data lakehouse analytics solution with Azure Databricks](https://learn.microsoft.com/en-us/training/paths/data-engineer-azure-databricks/)
