@@ -15,7 +15,10 @@
 2. linked service and dataset
 3. activities
 4. functions and parameters
-5. Git integration
+5. self hosted IR vm =>sql srv express =>expresssetup of ir
+6. 
+7. ADF ==> pvt endpoint <=> SQL server [adf portal => left side manage => pvt endpoint]
+8. Git integration
 
 ## databricks 
 [data lakehouse analytics solution with Azure Databricks](https://learn.microsoft.com/en-us/training/paths/data-engineer-azure-databricks/)
