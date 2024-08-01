@@ -4,11 +4,18 @@
 # My Own 
 [Databricks Project - check heading Databricks Project](https://github.com/Trainer-AJ/data-engineering-code/blob/main/databricks/Day2.ipynb)
 
-
+## data Pipelines 
+[AWS](https://aws.amazon.com/what-is/data-pipeline)
+- [more detailed](https://www.datacamp.com/tutorial/introduction-to-data-pipelines-for-data-professionals)
 # Rough TOC
 [ADF Intro](https://learn.microsoft.com/en-us/training/modules/data-integration-azure-data-factory/)
 - [Check this for Full ADF - MS leanr Module](https://learn.microsoft.com/en-us/training/paths/data-integration-scale-azure-data-factory/)
 - [databricks inside ADF](https://learn.microsoft.com/en-us/training/modules/run-azure-databricks-notebooks-azure-data-factory/)
+1. intro
+2. linked service and dataset
+3. activities
+4. functions and parameters
+5. Git integration
 
 ## databricks 
 [data lakehouse analytics solution with Azure Databricks](https://learn.microsoft.com/en-us/training/paths/data-engineer-azure-databricks/)
