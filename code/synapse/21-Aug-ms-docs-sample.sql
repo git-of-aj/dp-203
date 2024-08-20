@@ -82,3 +82,49 @@ Presumably, this decrease is due to the recent increased popularity of ride-shar
 
 
 /* For full tutorial click on "?" in top right corner then Knowledge center/Browse Available Samples/SQL Scripts/Analyze Azure Open Datasets using serverless SQL pool*/
+
+-- ##########################################################################################
+-- Date: 21 Aug
+SELECT
+    TOP 100 *
+FROM
+    OPENROWSET(
+        BULK 'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet',
+        FORMAT='PARQUET'
+    ) AS [result]
+
+-- Path 'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet' has URL suffix which is not allowed
+
+-- This is auto-generated code
+SELECT
+    TOP 100 *
+FROM
+    OPENROWSET(
+        BULK 'https://synou76.dfs.core.windows.net/syna/synapse/workspaces/yellow_tripdata_2024-01.parquet',
+        FORMAT = 'PARQUET'
+    ) AS [result]
+
+CREATE DATABASE DataExplorationDB 
+                COLLATE Latin1_General_100_BIN2_UTF8
+
+USE DataExplorationDB
+
+CREATE EXTERNAL DATA SOURCE ContosoLake
+WITH ( LOCATION = 'https://synou76.dfs.core.windows.net/')
+
+CREATE LOGIN data_explorer WITH PASSWORD = 'My Very Strong Password 1234!';
+
+CREATE USER data_explorer FOR LOGIN data_explorer;
+GO
+GRANT ADMINISTER DATABASE BULK OPERATIONS TO data_explorer;
+GO
+
+-- this is folder name in azure dls
+SELECT
+    TOP 100 *
+FROM
+    OPENROWSET(
+            BULK 'syna/synapse/workspaces/yellow_tripdata_2024-01.parquet',
+            DATA_SOURCE = 'ContosoLake',
+            FORMAT='PARQUET'
+    ) AS [result]
