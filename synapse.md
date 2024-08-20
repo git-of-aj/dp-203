@@ -82,6 +82,7 @@ Suppose you have received a CSV file containing some important data, and you wan
 In summary, external database objects are more suited for persistent and frequent access to data in external sources, while the `OPENROWSET` function is ideal for temporary and ad-hoc data retrieval without the need for long-term connections
 
 ## The CREATE EXTERNAL TABLE AS SELECT (CETAS) statement
+> CREATE EXTERNAL TABLE AS SELECT is a one-time operation for data extraction and transformation, and does not provide ongoing synchronization.
 - You can use CREATE EXTERNAL TABLE AS SELECT (CETAS) in dedicated SQL pool or serverless SQL pool to complete the following tasks:
 
 1.Create an external table
