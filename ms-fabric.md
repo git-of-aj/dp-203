@@ -18,4 +18,11 @@ Managing data security (table, column, and row levels) across different data eng
 # [fabric free trail](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
 - You don't need an Azure subscription to start a Fabric trial. If you have an existing Azure subscription, you can purchase a (paid) Fabric capacity.
 - but you need POWER BI LICENSE 
-# [fabric tutorial list ms dics ](https://learn.microsoft.com/en-us/fabric/get-started/end-to-end-tutorials)
+### [fabric tutorial list ms dics ](https://learn.microsoft.com/en-us/fabric/get-started/end-to-end-tutorials)
+
+# Fabric Concepts 
+# Use Case -1 : Semantic Modelling
+> Power BI semantic models represent a source of data ready for reporting, visualization, discovery, and consumption.
+- They pull Data from Tables in Data Warehouse 
+1. [what is Star Schema](https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-overview#star-schema-design)
+2. [Semantic Model Docs](https://learn.microsoft.com/en-us/fabric/data-warehouse/semantic-models)
